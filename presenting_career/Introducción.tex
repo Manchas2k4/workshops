@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169]{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{hyperref} % Allos to use web links.
+\usepackage{datetime}
+
+\usepackage[orientation=landscape,size=custom,width=16,height=9.75,scale=0.5,debug]{beamerposter}
+
+\graphicspath{ {images/} }
+
+\newdateformat{specialdate}{\twodigit{\THEMONTH}-\THEYEAR}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Algoritmos]{Importancia de los algoritmos} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Pedro O. Pérez M., MTI} % Your name
+\institute[Tecnológico de Monterrey] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+	Importancia de los algoritmos \\
+	Tecnológico de Monterrey \\ % Your institution for the title page
+	\medskip
+	\textit{pperezm@tec.mx} % Your email address
+}
+\date{\specialdate\today} % Custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{¿Quién soy?} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+\begin{frame}
+\frametitle{¿Quién soy?}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+	
+	\column{.70\textwidth} % Left column and width
+	\begin{itemize}
+		\item Pedro Oscar Pérez Murueta
+		\begin{itemize}
+			\item ISC Mayo 1994
+			\item MTI Mayo 2002
+			\item DCC (Actualmente)
+		\end{itemize}
+		\item Oficina: Edificio 2, Piso 3
+		\item Correo: pperezm@tec.mx
+		\item Especialidad: Lenguajes de programación, Algoritmos, Programación concurrent y paralela.
+		\item Director de la sede Querétaro del ACM-ICPC.
+		\item Gamer, RPG, PC Builder, Geek.
+	\end{itemize}
+	
+	\column{.30\textwidth} % Right column and width
+	\includegraphics{pedro.png}
+	
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{¿Cómo empezó todo?} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+\begin{frame}
+\frametitle{¿Cómo empezó todo?}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+	
+	\column{.50\textwidth} % Left column and width
+		\includegraphics[scale=0.7]{commodore.jpg}
+	
+	\column{.50\textwidth} % Right column and width
+		\includegraphics[scale=0.7]{ibm.jpg}
+	
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{¿Qué es un algoritmo?} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+\begin{frame}
+\frametitle{¿Qué es un algoritmo?}
+	\centering
+	\includegraphics[scale=0.6]{joke.jpg}	
+\end{frame}
+
+\begin{frame}
+	Un algoritmo es un procedimiento computacional bien definido que toma algún valor, o conjunto de valores, como entrada y produce un cierto valor, o conjunto de valores, como salida. Un algoritmo es, por lo tanto, una secuencia de pasos computacionales que transforman una entrada dada en una salida determinada.
+	\begin{flushright}
+		\textbf{Introduction to Algorithms, \\ Thomas H. Cormen}
+	\end{flushright}
+\end{frame}
+
+%------------------------------------------------
+\section{¿Porqué es importante el estudio de los algoritmos} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+\begin{frame}
+\frametitle{¿Porqué es importante el estudio de los algoritmos}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+	
+	\column{.60\textwidth} % Left column and width
+	\begin{itemize}
+		\item Por que su impacto es muy amplio:
+		\begin{itemize}
+			\item Internet.
+			\item Biología.
+			\item Computadoras.
+			\item Gráficas computacionales.
+			\item Seguridad.
+			\item Transporte.
+		\end{itemize}
+	\end{itemize}
+	
+	\column{.40\textwidth} % Right column and width
+	\begin{flushleft}
+		\includegraphics[scale=0.4]{imagen1.png}
+	\end{flushleft}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+	\column{.60\textwidth} % Left column and width
+	\begin{itemize}
+		\item Viejos algoritmos, nuevas oportunidades.
+		\item La posibilidad de resolver problemas de formas no exploradas.
+		\item Un reto intelectual.
+		\item Poder desbloquear los secretos del universo.
+		\item Por diversión y dinero.
+	\end{itemize}
+	
+	\column{.40\textwidth} % Right column and width
+	\begin{flushleft}
+		\includegraphics[scale=0.4]{imagen2.png}
+	\end{flushleft}
+	
+\end{columns}
+\end{frame}
+%------------------------------------------------
+\section{¿Cómo analizamos las algoritmos?} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{¿Cómo analizamos las algoritmos?}
+	\begin{itemize}
+		\item Pueden existir muchos algoritmos para resolver un problema. ¿Cómo podemos determinar que uno es más eficiente que otro?
+		\begin{itemize}
+			\item ¿Líneas de código generadas?
+			\item ¿Tiempo de ejecución del programa?
+		\end{itemize}
+		\item Análisis de complejidad temporal.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\centering
+	\includegraphics[scale=0.6]{imagen3.png}
+\end{frame}
+
+\end{document} 
